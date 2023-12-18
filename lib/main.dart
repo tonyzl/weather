@@ -121,6 +121,12 @@ class _FormExampleState extends State<FormExample> {
             ),
           ), 
           Padding(
+            padding: const EdgeInsets.symmetric(vertical: 3.0),
+            child: Text(
+              city?['sys']?['country'].toString()??'no data' 
+            ),
+          ),
+          Padding(
             
             padding: const EdgeInsets.symmetric(vertical: 3.0),
             
@@ -135,7 +141,15 @@ class _FormExampleState extends State<FormExample> {
             child: Text(
               city?['main']?['temp'].toString()??'no data' 
             ),
-          ), 
+          ),
+          Padding(
+            
+            padding: const EdgeInsets.symmetric(vertical: 3.0),
+            
+            child: Text(
+              ' °K' 
+            ),
+          ),  
         ],
       ),
     );
